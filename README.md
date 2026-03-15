@@ -10,35 +10,30 @@
 
 ## Installation
 
-### Claude Code
+### Using the skills CLI (recommended)
 
-Copy the skill to your project:
-
-```bash
-cp -r jambonz/ .claude/skills/jambonz/
-```
-
-Or to your global skills directory for all projects:
+Works with Claude Code, Cursor, VS Code Copilot, and other [compatible agents](https://agentskills.io):
 
 ```bash
-cp -r jambonz/ ~/.claude/skills/jambonz/
+npx skills add jambonz/skills
 ```
 
-### Cursor
+Add `--global` to install for all projects:
 
 ```bash
-cp -r jambonz/ .cursor/skills/jambonz/
+npx skills add jambonz/skills --global
 ```
 
-### VS Code Copilot
+### Manual installation
 
-```bash
-cp -r jambonz/ .vscode/skills/jambonz/
-```
+Copy the `jambonz/` folder to your agent's skills directory:
 
-### Other Agents
-
-Copy the `jambonz/` folder to the skills directory for your agent. See [agentskills.io](https://agentskills.io) for a list of supported agents.
+| Agent | Path |
+|-------|------|
+| Claude Code | `.claude/skills/jambonz/` |
+| Cursor | `.cursor/skills/jambonz/` |
+| VS Code Copilot | `.vscode/skills/jambonz/` |
+| Cross-client | `.agents/skills/jambonz/` |
 
 ## Using with the MCP Server
 
